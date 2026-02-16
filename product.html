@@ -30,7 +30,7 @@
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><a>Home</a></li>
-        <li><a href="product.html">Products</a></li>
+        <li><a>Products</a></li>
         <li><a>About</a></li>
         <li><a>Contact</a></li>
       </ul>
@@ -40,7 +40,7 @@
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-lg font-semibold text-gray-700">
         <li><a>Home</a></li>
-        <li><a href="product.html">Products</a></li>
+        <li><a>Products</a></li>
         <li><a>About</a></li>
         <li><a>Contact</a></li>
     </ul>
@@ -51,97 +51,21 @@
 </div>
     </header>
 
-    <section
-      class="relative w-full h-[70vh] bg-center bg-cover flex items-center justify-center"
-      style="background-image: url('banner-image.png');"
-    >
-      <!-- Dark Overlay -->
-      <div class="absolute inset-0 bg-black/60"></div>
 
-      <!-- Content -->
-      <div class="relative z-10 text-center text-white max-w-3xl px-6">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-          Discover the Latest Trends in Fashion & Lifestyle
-        </h1>
+    <section class="flex flex-col items-center my-12">
+    <h1 class="text-4xl font-bold mb-6">Our Products</h1>
 
-        <p class="mt-6 text-base md:text-lg text-gray-200">
-          Shop our curated collection of stylish apparel, accessories,
-          and home décor. Quality products, unbeatable prices,
-          and fast delivery.
-        </p>
-
-        <div class="mt-8 flex justify-center gap-4">
-          <button class="btn btn-primary px-8">
-            Shop Now
-          </button>
-          <button class="btn btn-outline btn-white px-8">
-            Explore
-          </button>
-        </div>
-      </div>
+    <div id="category-container" class="flex flex-wrap justify-center gap-4">
+        <button
+        id="All"
+        onclick='loadcategory("All")'
+        class="btn btn-outline rounded-full shadow-sm hover:bg-purple-600 hover:text-white category-btn"
+        >
+        All
+        </button>
+    </div>
     </section>
 
-    <section class="w-11/12 mx-auto py-16 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-3">Why Choose Us</h2>
-      <p class="text-gray-500 max-w-2xl mx-auto mb-12">
-        We provide the best shopping experience with top-notch services.
-      </p>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-          <i class="fa-solid fa-truck-fast text-4xl text-purple-600 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
-          <p class="text-gray-500 text-sm">
-            Get your orders delivered swiftly to your doorstep.
-          </p>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-          <i class="fa-solid fa-shield-halved text-4xl text-purple-600 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Secure Payment</h3>
-          <p class="text-gray-500 text-sm">
-            Shop with confidence using our secure payment options.
-          </p>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-          <i class="fa-solid fa-headset text-4xl text-purple-600 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
-          <p class="text-gray-500 text-sm">
-            Our support team is here to assist you anytime.
-          </p>
-        </div>
-
-        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-          <i class="fa-solid fa-thumbs-up text-4xl text-purple-600 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Quality Products</h3>
-          <p class="text-gray-500 text-sm">
-            We offer only the best products to our customers.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-11/12 mx-auto my-16">
-      <div class="flex justify-center items-center mb-8">
-        <h2 class="text-3xl font-bold">Trending Now</h2>
-      </div>
-
-      <section
-        id="trending-container"
-        class="grid grid-cols-1 md:grid-cols-3 gap-8"
-      >
-      </section>
-    </section>
-
-
-
-    <section class="flex flex-col justify-center items-center  space-x-4 my-8">
-        <h1 class="text-4xl font-bold">Our Products</h1>
-        <div id="category-container" class="flex flex-wrap space-y-8 gap-4 my-4">
-             <button class="btn btn-outline rounded-full shadow-sm hover:bg-purple-600 hover:text-white">All</button>
-        </div>
-    </section>
 
     <section id="product-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 mx-auto">
 
@@ -225,6 +149,6 @@
     </footer>
 
     
-    <script src="index.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>
